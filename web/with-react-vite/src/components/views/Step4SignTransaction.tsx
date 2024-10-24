@@ -9,6 +9,7 @@ import SignWithCapsule from "../../signing/SignWithCapsule";
 import SignWithViem from "../../signing/SignWithViem";
 import SignWithSolanaWeb3 from "../../signing/SignWithSolanaWeb3";
 import SignWithCosmJS from "../../signing/SignWithCosmJS";
+import SignWithAlchemy from "../../signing/SignWithAlchemy";
 
 type Step4SignTransactionProps = {};
 
@@ -32,7 +33,7 @@ const Step4SignTransaction: React.FC<PropsWithChildren<Step4SignTransactionProps
       case "cosmjs":
         return <SignWithCosmJS />;
       case "alchemy-aa":
-        return <div>Sign with AlchemyWallet</div>;
+        return <SignWithAlchemy />;
       default:
         return <div>Please select a signing method</div>;
     }

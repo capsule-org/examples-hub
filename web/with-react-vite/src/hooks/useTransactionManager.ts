@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import { capsuleClient } from "../capsuleClient";
+import { WalletType } from "@usecapsule/web-sdk";
 
 const useTransactionManager = () => {
   const [to, setTo] = useState<string>("");
@@ -14,8 +15,8 @@ const useTransactionManager = () => {
   useEffect(() => {
     const fetchFromAddress = async () => {
       try {
-        const wallets = await capsuleClient.getWallets();
-        const wallet = Object.values(wallets)[1];
+        const wallets = await capsuleClient.getWalletsByType(WalletType.EVM);
+        const wallet = Object.values(wallets)[0];
         console.log("wallet", wallet);
         const address = wallet.address!;
         console.log("address", address);

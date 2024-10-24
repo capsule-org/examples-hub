@@ -8,7 +8,7 @@ import { clusterApiUrl } from "@solana/web3.js";
 import { sepolia } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useAtom } from "jotai";
-import Logo from "../assets/capsule.svg?react";
+import Logo from "../assets/capsule.svg";
 import { capsuleClient } from "../capsuleClient";
 import { disableNextAtom, disablePrevAtom, isLoadingAtom, isLoggedInAtom } from "../state";
 import ModalTriggerCard from "../components/ui/modal-trigger-card";
@@ -88,7 +88,7 @@ const AuthWithCapsuleModal: React.FC<AuthWithCapsuleModalProps> = () => {
             chain={SOLANA_NETWORK}
             appIdentity={{ name: "Capsule Modal Example", uri: `${location.protocol}//${location.host}` }}>
             <CapsuleModal
-              logo={Logo}
+              logo={Logo as unknown as string}
               theme={{
                 backgroundColor: "#FFF",
                 foregroundColor: "#000",
