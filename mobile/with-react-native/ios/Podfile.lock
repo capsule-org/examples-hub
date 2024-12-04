@@ -1,6 +1,6 @@
 PODS:
   - boost (1.84.0)
-  - capsule-react-native-wallet (2.4.0-dev.1):
+  - capsule-react-native-wallet (2.7.0-dev.5):
     - React-Core
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.75.4)
@@ -1244,11 +1244,30 @@ PODS:
     - react-native-config/App (= 1.5.3)
   - react-native-config/App (1.5.3):
     - React-Core
-  - react-native-get-random-values (1.11.0):
+  - react-native-fast-encoder (0.1.12):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
     - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - react-native-modpow (1.1.0):
     - React
-  - react-native-passkey (2.2.0):
+  - react-native-passkey (3.0.0):
     - React-Core
   - react-native-quick-base64 (2.1.2):
     - DoubleConversion
@@ -1271,7 +1290,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-quick-crypto (0.7.5):
+  - react-native-quick-crypto (0.7.7):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1294,7 +1313,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-webview (13.12.3):
+  - react-native-webview (13.12.4):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1575,11 +1594,9 @@ PODS:
     - React-logger (= 0.75.4)
     - React-perflogger (= 0.75.4)
     - React-utils (= 0.75.4)
-  - RNCAsyncStorage (2.0.0):
+  - RNCAsyncStorage (2.1.0):
     - React-Core
-  - RNInAppBrowser (3.7.0):
-    - React-Core
-  - RNKeychain (9.0.0):
+  - RNKeychain (9.2.2):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1643,9 +1660,9 @@ DEPENDENCIES:
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
   - react-native-config (from `../node_modules/react-native-config`)
-  - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
+  - react-native-fast-encoder (from `../node_modules/react-native-fast-encoder`)
   - react-native-modpow (from `../node_modules/react-native-modpow`)
-  - "react-native-passkey (from `../node_modules/@usecapsule/react-native-passkey`)"
+  - react-native-passkey (from `../node_modules/react-native-passkey`)
   - react-native-quick-base64 (from `../node_modules/react-native-quick-base64`)
   - react-native-quick-crypto (from `../node_modules/react-native-quick-crypto`)
   - react-native-webview (from `../node_modules/react-native-webview`)
@@ -1676,7 +1693,6 @@ DEPENDENCIES:
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
-  - RNInAppBrowser (from `../node_modules/react-native-inappbrowser-reborn`)
   - RNKeychain (from `../node_modules/react-native-keychain`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -1761,12 +1777,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
   react-native-config:
     :path: "../node_modules/react-native-config"
-  react-native-get-random-values:
-    :path: "../node_modules/react-native-get-random-values"
+  react-native-fast-encoder:
+    :path: "../node_modules/react-native-fast-encoder"
   react-native-modpow:
     :path: "../node_modules/react-native-modpow"
   react-native-passkey:
-    :path: "../node_modules/@usecapsule/react-native-passkey"
+    :path: "../node_modules/react-native-passkey"
   react-native-quick-base64:
     :path: "../node_modules/react-native-quick-base64"
   react-native-quick-crypto:
@@ -1827,8 +1843,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
-  RNInAppBrowser:
-    :path: "../node_modules/react-native-inappbrowser-reborn"
   RNKeychain:
     :path: "../node_modules/react-native-keychain"
   Yoga:
@@ -1836,7 +1850,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 4cb898d0bf20404aab1850c656dcea009429d6c1
-  capsule-react-native-wallet: 3b1f24652d209fd38d33d5c9588d0a0d1e357d48
+  capsule-react-native-wallet: d7df8e36ddd11385a4516452d4a17a69a9c1c183
   DoubleConversion: 76ab83afb40bddeeee456813d9c04f67f78771b5
   FBLazyVector: 430e10366de01d1e3d57374500b1b150fe482e6d
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
@@ -1873,12 +1887,12 @@ SPEC CHECKSUMS:
   React-Mapbuffer: b982d5bba94a8bc073bda48f0d27c9b28417fae3
   React-microtasksnativemodule: 2b73e68f0462f3175f98782db08896f8501afd20
   react-native-config: 8f7283449bbb048902f4e764affbbf24504454af
-  react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06
+  react-native-fast-encoder: 88e0a3a301d7a88941963b4053e27cf2a5b21601
   react-native-modpow: cddb1fde29eba5f7acc5cc57398075f7caeeddc4
-  react-native-passkey: 5f6ae0faf40a2949cf74bed8ef7dfc12449dc902
+  react-native-passkey: 1f8d18b3d0202ae5f6171cd39e3193247ab6f1af
   react-native-quick-base64: f98f17faf04c9779faf726921a2b389d4775e8b6
-  react-native-quick-crypto: 33ecd0608ced27f5803cfdcd2ab3f179df36fa33
-  react-native-webview: 926d2665cf3196e39c4449a72d136d0a53b9df8a
+  react-native-quick-crypto: 8bc5592ecf674fbf6c90a852ddc2981ffaabc55e
+  react-native-webview: db71683cdc313a490afaee486a6efeb9d5a15b59
   React-nativeconfig: 8c83d992b9cc7d75b5abe262069eaeea4349f794
   React-NativeModulesApple: 9f7920224a3b0c7d04d77990067ded14cee3c614
   React-perflogger: 59e1a3182dca2cee7b9f1f7aab204018d46d1914
@@ -1905,12 +1919,11 @@ SPEC CHECKSUMS:
   React-utils: cbe8b8b3d7b2ac282e018e46f0e7b25cdc87c5a0
   ReactCodegen: 4bcb34e6b5ebf6eef5cee34f55aa39991ea1c1f1
   ReactCommon: 6a952e50c2a4b694731d7682aaa6c79bc156e4ad
-  RNCAsyncStorage: d35c79ffba52c1013013e16b1fc295aec2feabb6
-  RNInAppBrowser: e36d6935517101ccba0e875bac8ad7b0cb655364
-  RNKeychain: 18fc2d8f29dd957ccfc2989d9389f7d5888169f3
+  RNCAsyncStorage: cc6479c4acd84cc7004946946c8afe30b018184d
+  RNKeychain: 4cfd0dc8634c2dd81a4607c8299ed424bfdee1a7
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 055f92ad73f8c8600a93f0e25ac0b2344c3b07e6
 
-PODFILE CHECKSUM: c7b47d4ffdfbacd82e3642fab52750305fad0be7
+PODFILE CHECKSUM: 62f4b175a49cfdb98b30b21affa7919c83c7bceb
 
 COCOAPODS: 1.15.2

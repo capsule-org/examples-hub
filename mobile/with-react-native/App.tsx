@@ -1,4 +1,3 @@
-import './shim';
 import React, {useEffect, useState} from 'react';
 import {
   SafeAreaView,
@@ -18,6 +17,7 @@ import {
   WalletType,
 } from '@usecapsule/react-native-wallet';
 import {webcrypto} from 'crypto';
+import {logError} from './logger';
 
 const capsuleClient = new CapsuleMobile(
   Environment.BETA,
@@ -50,12 +50,7 @@ function App(): React.JSX.Element {
       try {
         await capsuleClient.init();
       } catch (error) {
-        console.error('Error initializing Capsule:', error);
-        const errorMessage =
-          error instanceof Error
-            ? error.message
-            : 'Unknown initialization error';
-        setError(`Failed to initialize: ${errorMessage}`);
+        logError(error);
       } finally {
         setLoading({isLoading: false, message: ''});
       }
@@ -81,12 +76,7 @@ function App(): React.JSX.Element {
       await capsuleClient.createUser(email);
       setAuthStage('verification');
     } catch (error) {
-      console.error('Error in handleCreateAccount:', error);
-      const errorMessage =
-        error instanceof Error
-          ? error.message
-          : 'Unknown error during account creation';
-      setError(`Account creation failed: ${errorMessage}`);
+      logError(error);
     } finally {
       setLoading({isLoading: false, message: ''});
     }

@@ -23,6 +23,7 @@
     "@types/crypto-js": "^4.2.2",
     "@usecapsule/react-native-passkey": "2.2.0",
     "@usecapsule/react-native-wallet": "2.5.0",
+    "base-64":"1.0.0",
     "expo": "~51.0.38",
     "expo-constants": "~16.0.2",
     "expo-crypto": "^13.0.2",

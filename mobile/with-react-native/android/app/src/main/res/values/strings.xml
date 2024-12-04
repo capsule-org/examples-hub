@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Capsule RN Example</string>
+    <string name="app_name">CPSL_RN</string>
     <string name="asset_statements" translatable="false">
     [{
       \"include\": \"https://app.beta.usecapsule.com/.well-known/assetlinks.json\"
