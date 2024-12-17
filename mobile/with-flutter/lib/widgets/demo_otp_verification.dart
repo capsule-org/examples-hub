@@ -40,8 +40,6 @@ class _DemoOtpVerificationState extends State<DemoOtpVerification> {
     try {
       final success = await widget.onVerify(_otpController.text);
 
-      print("_handleVerification success: $success");
-
       if (!mounted) return;
 
       if (success) {

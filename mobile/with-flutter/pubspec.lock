@@ -36,11 +36,18 @@ packages:
   capsule:
     dependency: "direct main"
     description:
+<<<<<<< Updated upstream
       name: capsule
-      sha256: "27ae3f8d140543e59963ad03bb53ebe912652556836d8a76e9456748b7f35acd"
+      sha256: f922fc5570a02e42d292c13e89255b5ff92533bdf38efd84edcc7f94a02767c2
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "0.5.1"
+=======
+      path: "../../../flutter-sdk"
+      relative: true
+    source: path
+    version: "0.6.0"
+>>>>>>> Stashed changes
   characters:
     dependency: transitive
     description:
@@ -199,7 +206,7 @@ packages:
     source: hosted
     version: "5.0.0"
   flutter_svg:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: flutter_svg
       sha256: "54900a1a1243f3c4a5506d853a2b5c2dbc38d5f27e52a52618a8054401431123"

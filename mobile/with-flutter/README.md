@@ -33,25 +33,6 @@ methods and wallet management features.
 Note: The Solana signing example uses the `solana_web3` package for demonstration purposes. You can modify the example
 to use other Dart packages for Solana interaction based on your needs.
 
-## Project Structure
-
-```
-lib/
-├── auth_examples/            # Authentication implementation examples
-│   ├── email_auth_example.dart
-│   ├── oauth_auth_example.dart
-│   ├── phone_auth_example.dart
-│   └── pregen_auth_example.dart
-├── signing_examples/         # Transaction signing examples
-│   ├── cosmos_sign_example.dart
-│   ├── evm_sign_example.dart
-│   └── solana_sign_example.dart
-├── client/                  # Capsule client configuration
-├── theme/                   # App theming
-├── widgets/                 # Reusable UI components
-└── main.dart               # App entry point
-```
-
 ## Getting Started
 
 1. Ensure you have Flutter installed and set up on your development machine

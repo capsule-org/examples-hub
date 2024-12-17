@@ -1,7 +1,7 @@
-import 'package:cpsl_flutter/auth_examples/email_auth_example.dart';
-import 'package:cpsl_flutter/auth_examples/oauth_auth_example.dart';
-import 'package:cpsl_flutter/auth_examples/phone_auth_example.dart';
-import 'package:cpsl_flutter/auth_examples/pregen_auth_examle.dart';
+import 'package:cpsl_flutter/examples/auth/email_auth_example.dart';
+import 'package:cpsl_flutter/examples/auth/oauth_auth_example.dart';
+import 'package:cpsl_flutter/examples/auth/phone_auth_example.dart';
+import 'package:cpsl_flutter/examples/auth/pregen_auth_examle.dart';
 import 'package:cpsl_flutter/client/capsule.dart';
 import 'package:flutter/material.dart';
 

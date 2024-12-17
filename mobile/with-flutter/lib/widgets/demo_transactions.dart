@@ -1,7 +1,7 @@
 // demo_transactions.dart
-import 'package:cpsl_flutter/signing_examples/cosmos_sign_example.dart';
-import 'package:cpsl_flutter/signing_examples/evm_sign_example.dart';
-import 'package:cpsl_flutter/signing_examples/solana_sign_example.dart';
+import 'package:cpsl_flutter/examples/signing/cosmos_sign_example.dart';
+import 'package:cpsl_flutter/examples/signing/evm_sign_example.dart';
+import 'package:cpsl_flutter/examples/signing/solana_sign_example.dart';
 import 'package:flutter/material.dart';
 import 'package:capsule/capsule.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
